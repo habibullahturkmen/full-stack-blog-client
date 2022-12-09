@@ -13,6 +13,7 @@ const SinglePost = () => {
     const pathArray = useLocation().pathname.split("/");
     const postId = pathArray[pathArray.length - 1];
     const { currentUser } = useContext(AuthContext);
+    const navigate = useNavigate();
 
     React.useEffect(() => {
         const fetchData = async () => {
@@ -25,6 +26,15 @@ const SinglePost = () => {
         }
         fetchData();
     },[postId]);
+
+    const handleDelete = async () => {
+        try {
+            await axios.delete(`/posts/${postId}`);
+            navigate("/");
+        } catch (err) {
+            console.log(err)
+        }
+    }
 
     return (
         <div className="single-post">
@@ -47,6 +57,7 @@ const SinglePost = () => {
                             <img
                                 src={Delete}
                                 alt="delete"
+                                onClick={handleDelete}
                             />
                         </div>
                     )}
@@ -54,7 +65,7 @@ const SinglePost = () => {
                 <h1>{post.title}</h1>
                 <p>{post.desc}</p>
             </div>
-            <Menu />
+            <Menu category={post.cat} />
         </div>
     );
 }
