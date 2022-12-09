@@ -261,6 +261,130 @@ $lightGreen : #b9e7e7;
 
             .menu {
                 flex: 2;
+                display: flex;
+                flex-direction: column;
+                gap: 1.56em;
+
+                h1 {
+                    font-size: 1.25rem;
+                    color: #555;
+                }
+
+                .post {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.625em;
+
+                    img {
+                        width: 100%;
+                        height: 12.5rem;
+                        object-fit: cover;
+                    }
+
+                    h2 {
+                        color: #555;
+                    }
+
+                    button {
+                        width: max-content;
+                        padding: 0.47em 0.94em;
+                        border: 0.0625em solid teal;
+                        cursor: pointer;
+                        color: teal;
+                        background-color: white;
+
+                        &:hover {
+                            border: 0.0625em solid white;
+                            background-color: $lightGreen;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+
+        // Write Post
+        .write-post {
+            margin-top: 1.25em;
+            display: flex;
+            gap: 1.25em;
+
+            .content {
+                flex: 5;
+                display: flex;
+                flex-direction: column;
+                gap: 1.25em;
+
+                input {
+                    padding: 0.625em;
+                    border: 0.0625em solid lightgray;
+                }
+
+                .editor-container {
+                    height: 18.75rem;
+                    overflow: scroll;
+                    border: 0.0625em solid lightgray;
+
+                    .editor {
+                        height: 100%;
+                        border: none;
+                    }
+                }
+            }
+
+            .menu {
+                flex: 2;
+                display: flex;
+                flex-direction: column;
+                gap: 1.25em;
+
+                .item {
+                    border: 0.0625em solid lightgray;
+                    padding: 0.625em;
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    font-size: 0.75rem;
+                    color: #555;
+
+                    h1 {
+                        font-size: 1.25rem;
+                    }
+
+                    .upload-image {
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+
+                    .buttons {
+                        display: flex;
+                        justify-content: space-between;
+
+                        :first-child {
+                            cursor: pointer;
+                            color: teal;
+                            background-color: white;
+                            border: 0.0625em solid teal;
+                            padding: 0.22em 0.35em;
+                        }
+
+                        :last-child {
+                            cursor: pointer;
+                            color: white;
+                            background-color: teal;
+                            border: 0.0625em solid white;
+                            padding: 0.22em 0.35em;
+                        }
+                    }
+
+                    .cat {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.125em;
+                        color: teal;
+                    }
+                }
             }
         }
 

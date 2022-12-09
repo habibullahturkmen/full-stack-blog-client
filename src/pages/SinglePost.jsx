@@ -2,6 +2,7 @@ import React from "react";
 import Edit from "../images/edit.png";
 import Delete from "../images/delete.png";
 import {Link} from "react-router-dom";
+import Menu from "../components/Menu";
 
 const SinglePost = () => {
     return (
@@ -22,12 +23,10 @@ const SinglePost = () => {
                     </div>
                 </div>
                 <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
-                <p>
-                    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi cum ducimus eveniet exercitationem explicabo illum, iste numquam odit officiis quaerat quis reprehenderit rerum soluta tempora vero voluptate! Odit, vel.<br/><br/></span><span>Ab, cumque cupiditate, enim harum hic id, nulla placeat porro quia rem similique suscipit. At earum eum mollitia praesentium. Ad aliquam autem blanditiis laborum minima nostrum odit, temporibus voluptas voluptate.<br/><br/></span><span>Aliquam cupiditate natus nihil reiciendis veritatis. Accusantium aliquam aliquid aperiam autem corporis doloribus, ex incidunt ipsum, iste itaque laboriosam maxime mollitia nam nihil obcaecati provident sed sit, veniam vitae voluptas?<br/><br/></span><span>Enim ex fugit iste minus, pariatur quibusdam! Asperiores autem blanditiis, consequuntur dolores dolorum, eum eveniet ex facere fugit laudantium nisi non officiis omnis perferendis possimus quam unde, vel voluptas voluptatum!<br/><br/></span><span>At dolorum itaque minima necessitatibus placeat quia sed unde. Dignissimos ducimus incidunt iusto quaerat rerum. Adipisci culpa deserunt ducimus maxime minus molestias officia officiis quibusdam, sunt tempora! Architecto, qui sapiente. At dolorum itaque minima necessitatibus placeat quia sed unde. Dignissimos ducimus incidunt iusto quaerat rerum. Adipisci culpa deserunt ducimus maxime minus molestias officia officiis quibusdam, sunt tempora! Architecto, qui sapiente.<br/><br/></span>
-                    </p>
+                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi cum ducimus eveniet exercitationem explicabo illum, iste numquam odit officiis quaerat quis reprehenderit rerum soluta tempora vero voluptate! Odit, vel.<br/><br/></span><span>Ab, cumque cupiditate, enim harum hic id, nulla placeat porro quia rem similique suscipit. At earum eum mollitia praesentium. Ad aliquam autem blanditiis laborum minima nostrum odit, temporibus voluptas voluptate.<br/><br/></span><span>Aliquam cupiditate natus nihil reiciendis veritatis. Accusantium aliquam aliquid aperiam autem corporis doloribus, ex incidunt ipsum, iste itaque laboriosam maxime mollitia nam nihil obcaecati provident sed sit, veniam vitae voluptas?<br/><br/></span><span>Enim ex fugit iste minus, pariatur quibusdam! Asperiores autem blanditiis, consequuntur dolores dolorum, eum eveniet ex facere fugit laudantium nisi non officiis omnis perferendis possimus quam unde, vel voluptas voluptatum!<br/><br/></span><span>At dolorum itaque minima necessitatibus placeat quia sed unde. Dignissimos ducimus incidunt iusto quaerat rerum. Adipisci culpa deserunt ducimus maxime minus molestias officia officiis quibusdam, sunt tempora! Architecto, qui sapiente. At dolorum itaque minima necessitatibus placeat quia sed unde. Dignissimos ducimus incidunt iusto quaerat rerum. Adipisci culpa deserunt ducimus maxime minus molestias officia officiis quibusdam, sunt tempora! Architecto, qui sapiente.<br/><br/></span>
                 </p>
             </div>
-            <div className="menu">m</div>
+            <Menu />
         </div>
     );
 }
