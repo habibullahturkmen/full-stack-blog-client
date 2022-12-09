@@ -201,6 +201,69 @@ $lightGreen : #b9e7e7;
             }
         }
 
+        // Single Post
+        .single-post {
+            display: flex;
+            gap: 3.125em;
+
+            .content {
+                flex: 5;
+                display: flex;
+                flex-direction: column;
+                gap: 1.875em;
+
+                img {
+                    width: 100%;
+                    height: 18.75rem;
+                    object-fit: cover;
+                }
+
+                .user {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.625em;
+                    font-size: 0.875em;
+
+                    img {
+                        width: 3.125rem;
+                        height: 3.125rem;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                    span {
+                        font-weight: bold;
+                    }
+
+                    .edit {
+                        display: flex;
+                        gap: 0.3125em;
+
+                        img {
+                            width: 1.25rem;
+                            height: 1.25rem;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                h1 {
+                    font-size: 2.625rem;
+                    color: #333;
+                }
+
+                p {
+                    text-align: justify;
+                    line-height: 1.875em;
+                }
+
+            }
+
+            .menu {
+                flex: 2;
+            }
+        }
+
 
     }
 }

@@ -30,11 +30,9 @@ const Navbar = () => {
                     </Link>
                     <span>Habib</span>
                     <span>Logout</span>
-                    {/*<span className="write">*/}
                     <Link className="link" to="/write">
                         <span className="write">Write</span>
                     </Link>
-                    {/*</span>*/}
                 </div>
             </div>
         </div>

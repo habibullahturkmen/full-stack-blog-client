@@ -38,7 +38,7 @@ const Home = () => {
                   posts.map(post => (
                       <div className="post" key={post.id}>
                           <div className="img">
-                              <img src={post.img} alt="Post Image"/>
+                              <img src={post.img} alt="Post"/>
                           </div>
                           <div className="content">
                               <Link className="link" to={`/post/${post.id}`}>
