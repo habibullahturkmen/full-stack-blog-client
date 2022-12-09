@@ -1,7 +1,17 @@
 $lightGreen : #b9e7e7;
 
 .app {
+    display: flex;
+    justify-content: center;
+
     .container {
+        width: 64rem;
+
+        .link {
+            text-decoration: none;
+            color: inherit;
+        }
+
         // Login & Register
         .auth {
             display: flex;
@@ -51,5 +61,55 @@ $lightGreen : #b9e7e7;
                 }
             }
         }
+
+        // Navbar
+        .navbar {
+            .container {
+                padding: 0.625em 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .logo {
+                    img {
+                        width: 7.5rem;
+                    }
+                }
+
+                .links {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.625em;
+
+                    h6 {
+                        font-size: 1rem;
+                        font-weight: 300;
+                    }
+
+                    span {
+                        cursor: pointer;
+                    }
+
+                    .write {
+                        background-color: $lightGreen;
+                        width: 3.125rem;
+                        height: 3.125rem;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-weight: 300;
+                        border: 0.0625em solid white;
+
+                        &:hover {
+                            color: teal;
+                            background-color: white;
+                            border: 0.0625em solid teal;
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }
