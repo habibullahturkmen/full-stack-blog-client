@@ -36,10 +36,15 @@ const SinglePost = () => {
         }
     }
 
+    const getText = (html) => {
+        const doc = new DOMParser().parseFromString(html, "text/html");
+        return doc.body.textContent;
+    }
+
     return (
         <div className="single-post">
             <div className="content">
-                <img src={post?.img} alt="Post"/>
+                <img src={`../upload/${post?.img}`} alt="Post"/>
                 <div className="user">
                     {post.userImg && <img src={post.userImg} alt="avatar"/>}
                     <div className="info">
@@ -48,7 +53,7 @@ const SinglePost = () => {
                     </div>
                     {currentUser.username === post.username && (
                         <div className="edit">
-                            <Link to={`/write/?edit=${2}`}>
+                            <Link to={`/write/?edit=${2}`} state={post}>
                                 <img
                                     src={Edit}
                                     alt="edit"
@@ -63,7 +68,7 @@ const SinglePost = () => {
                     )}
                 </div>
                 <h1>{post.title}</h1>
-                <p>{post.desc}</p>
+                <p>{getText(post.desc)}</p>
             </div>
             <Menu category={post.cat} />
         </div>
